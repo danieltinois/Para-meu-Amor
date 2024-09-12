@@ -18,9 +18,22 @@ body {
   align-items: center;
 }
 
-@media (max-height: 500px) {
-  body {
-    margin: 25% 0 25% 0;
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+  .envelop {
+    width: 20rem; /* Reduz a largura no mobile */
+    height: 16rem; /* Reduz a altura no mobile */
+  }
+  .note__text {
+    font-size: 1rem; /* Reduz o tamanho da fonte no mobile */
+  }
+  .full-letter {
+    width: 90%; /* Ocupa mais espaço da tela */
+    height: 80vh; /* Limita a altura da carta */
+    overflow-y: auto; /* Ativa rolagem se o conteúdo ultrapassar o limite */
+  }
+  .full-letter p {
+    font-size: 1rem; /* Reduz tamanho da fonte na carta completa */
   }
 }
 
